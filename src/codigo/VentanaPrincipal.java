@@ -5,8 +5,11 @@
  */
 package codigo;
 
+import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.GridLayout;
 import javax.swing.JButton;
+import javax.swing.JPanel;
 
 /**
  *
@@ -14,31 +17,27 @@ import javax.swing.JButton;
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
 
-    String[][] ejercicios =  
+    String[][] ejercicios =
             {
-                {"array1"}, 
-                {"makeMiddle","commonEnd","sum3","rotateLeft3","reverse3"
+                {"array1", "makeMiddle","commonEnd","sum3","rotateLeft3","reverse3"
                 ,"maxEnd3","sum2","middleWay","makeEnds","has23","no23","makeLast"
-                ,"double23","fix23","start1","biggerTwo"}
-            ,
-                {"array2"},
-                {"countEvens","bigDiff","centeredAverage","sum13","sum67"
+                ,"double23","fix23","start1","biggerTwo"},
+
+                {"array2","countEvens","bigDiff","centeredAverage","sum13","sum67"
                 ,"has22","lucky13","sum28","more14","fizzArray","only14","fizzArray2"
-                ,"no14","isEverywhere","either24","matchUp","has77","has12"}
-            ,
-                {"array3"}, 
-                {"maxSpan","fix34","fix45","canBalance","linearIn"
-                ,"squareUp","seriesUp","maxMirror","countClumps"}
-            ,
-                {"string1"}, 
-                {"helloName","makeAbba","makeTags","makeOutWord","extraEnd"
+                ,"no14","isEverywhere","either24","matchUp","has77","has12"},
+                
+                {"array3","maxSpan","fix34","fix45","canBalance","linearIn"
+                ,"squareUp","seriesUp","maxMirror","countClumps"},
+
+                {"string1","helloName","makeAbba","makeTags","makeOutWord","extraEnd"
                 ,"firstTwo","firstHalf","withoutEnd","comboString","nonStart","left2","right2"
-                ,"theEnd","withouEnd2","middleTwo"}
-            ,
-                {"string2"}, 
-                {"doubleChar","countHi","catDog","countCode","endOther"
+                ,"theEnd","withouEnd2","middleTwo"},
+
+                {"string2","doubleChar","countHi","catDog","countCode","endOther"
                 ,"xyzThere","bobThere","xyBalance","mixString","repeatEnd","repeatFront","repeatSeparator"}
-            };	 	 
+            }
+    ;	 	 
  	 	  	 
          
     /**
@@ -46,20 +45,31 @@ public class VentanaPrincipal extends javax.swing.JFrame {
      */
     public VentanaPrincipal() {
         initComponents();
-        setSize(1024, 768);
-        getContentPane().setLayout(new GridLayout(0,ejercicios.length));
+        setSize(1400, 600);
+        JButton boton ;
+
+        System.out.print(ejercicios.length);
         for (int i=0; i< ejercicios.length; i++){
-            JButton boton = new JButton();
+            JPanel jPanel1 = new JPanel();
+            jPanel1.setSize(1400, 100);
+            jPanel1.setLocation(0, i*100);
+            jPanel1.setLayout(new GridLayout(0,9));
+            boton = new JButton();
             boton.setText(ejercicios[i][0]);
             boton.setFocusPainted(false);
-            getContentPane().add(boton);
-            for (int j=0; j< ejercicios[i].length; j++){
-                           JButton boton2 = new JButton();
-                            boton2.setText(ejercicios[i][j]);
-                            boton2.setFocusPainted(false);
-                            getContentPane().add(boton2); 
+            boton.setBackground(Color.orange);
+            jPanel1.add(boton);
+            for (int j=1; j< ejercicios[i].length; j++){
+                boton = new JButton();
+                 boton.setText(ejercicios[i][j]);
+                 boton.setFocusPainted(false);
+                 jPanel1.add(boton); 
             }
+            getContentPane().add(jPanel1);
         }
+        
+  
+
     }
 
     /**
@@ -77,11 +87,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 1024, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 712, Short.MAX_VALUE)
         );
 
         pack();
