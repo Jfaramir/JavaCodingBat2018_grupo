@@ -1,0 +1,17 @@
+makeMiddle
+commonEnd	 
+sum3	 
+rotateLeft3
+reverse3	 
+maxEnd3	 
+sum2
+middleWay	 
+makeEnds	 
+has23
+no23	 
+makeLast	 
+double23
+fix23	 
+start1	 
+biggerTwo
+

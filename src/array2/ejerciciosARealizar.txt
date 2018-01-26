@@ -1,0 +1,7 @@
+ countEvens	 bigDiff	 centeredAverage
+ sum13	 sum67	 has22
+ lucky13	 sum28	 more14
+ fizzArray	 only14	 fizzArray2
+ no14	 isEverywhere	 either24
+ matchUp	 has77	 has12
+

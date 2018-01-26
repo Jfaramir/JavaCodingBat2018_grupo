@@ -1,0 +1,4 @@
+maxSpan	 fix34	 fix45
+ canBalance	 linearIn	 squareUp
+ seriesUp	 maxMirror	 countClumps
+

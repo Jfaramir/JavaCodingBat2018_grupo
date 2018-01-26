@@ -1,0 +1,5 @@
+helloName H	 makeAbba H	 makeTags
+ makeOutWord	 extraEnd	 firstTwo
+ firstHalf	 withoutEnd	 comboString
+ nonStart	 left2	 right2
+ theEnd	 withouEnd2	 middleTwo

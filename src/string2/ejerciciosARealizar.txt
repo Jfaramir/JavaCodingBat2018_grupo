@@ -1,0 +1,6 @@
+
+ doubleChar H	 countHi H	 catDog
+ countCode	 endOther	 xyzThere
+ bobThere	 xyBalance	 mixString
+ repeatEnd	 repeatFront	 repeatSeparator
+
